@@ -1,0 +1,48 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+void input(int a[][5],int&N,int M)
+{  for(int i=0;i<N;i++)
+	cout<<"Enter the array";
+   cin>>a[i][];
+   cin>>N>>M;
+}
+void row(int a[][5],int N,int M,int r[])
+{
+	for(int i=0;i<N;i++)
+   {
+   	r[i]=0;
+      for(int j=0;j<M;j++)
+      r[i]+=a[i][j];
+   }
+}
+void col(int a[][5],int N,int M,int c[])
+{
+	for(int j=0;j<M;j++)
+   {
+   	c[j]=0;
+      for(int i=0;i<N;i++)
+      c[j]+=a[i][j];
+   }
+}
+void display(int a[][5],int N,int M, int r[],int c[])
+{
+	for(int i=0;i<N;i++)
+   {
+   	for(int j=0;j<M;j++)
+           cout<<a[i][j]<<"\t";
+      cout<<"="<<r[i]<<endl;
+      for(int j=0;j<M;j++)
+          cout<<c[j]<<"\t";
+    }
+}
+void main(int a[5][5],int N,int M, int r[3],int c[3])
+{
+	cin>>N>>M;
+   A.input();
+   B.row();
+   C.col();
+   D.display();
+}
+
+
